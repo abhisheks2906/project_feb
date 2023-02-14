@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(5, 5, 97, 0.269);
+    /* text-align: center; */
+    /* display: grid; */
+    /* overflow: hidden; */
+}
+
+/* h2 {
+    position: relative;
+    font-family: Verdana;
+    font-size: 12rem;
+    letter-spacing: 1rem;
+    -webkit-text-stroke: 0.2vw tomato;
+    color: aqua; */
+    /* -webkit-animation: abhi 10s linear infinite; */
+
+/* } */
+
+h3 {
+    /* position: absolute; */
+    font-size: 20vw;
+    font-family: sans-serif;
+    /* text-align: center; */
+    /* border-radius: 50%; */
+    /* -webkit-text-stroke: 0.5vw tomato; */
+    background: linear-gradient(0deg, #986, #0fc, #fff, #c00, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1000%;
+    animation: abhi 5s linear 1;
+    /* animation: kaju 10s linear infinite; */
+    /* z-index: 1; */
+}
+
+/* h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 8%;
+    height: 100%;
+    color: rgb(106, 104, 114); */
+    /* -webkit-text-stroke: 0vw #059680; */
+    /* border-right: 5px solid rgba(254, 250, 0, 0);
+    overflow: hidden;
+    animation: abhi 5s linear infinite;
+    -webkit-animation: abhi 4s linear 1;
+} */
+
+@keyframes abhi {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes kaju {
+    0% ,100% {
+        transform: scale(.15);
+        opacity: 0;
+
+    }
+
+    10%,80%{
+        rotate: 720deg;
+    }
+
+    30% , 75%{
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
